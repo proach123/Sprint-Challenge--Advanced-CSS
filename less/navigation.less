@@ -1,1 +1,39 @@
 // Navigation code here
+
+.navbarfixed{
+    width:100%;
+    position: fixed;
+    top:0;
+}
+
+.navbar{
+    .display-flex-center(column);
+    .margin-set(2%);
+    .bootup();
+    h1{
+        .display-flex-center(row);
+        font-size: 4rem;
+    }
+
+    nav{
+        .display-flex-center(row);
+        justify-content: space-around;
+        .margin-set(2%);
+        width: 40%;
+        @media @phone{
+            width: 100%;
+            .bootup();
+          }
+
+        a{
+            margin: 2%;
+            text-decoration: none ;
+            color:@shuttle-gray;
+            font-size: 1.7rem;
+          }
+    }
+
+}
+
+
+
