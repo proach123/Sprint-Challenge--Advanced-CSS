@@ -13,19 +13,39 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 0){
+          $(".navbarfixed").css({"opacity" : "0.3"})
+          $(".navbarfixed").css({"background" : "white"})
+        }
+        else {
+          $(".navbarfixed").css({"opacity" : "1"})
+          $(".navbarfixed").css({"background" : "whitesmoke"})
+      }
+    })
+  })
+  </script>
+
 </head>
 
 <body>
-<div class="navbar">
-<h1>SpaceWalkers</h1>
-  <nav>
-    <a href="home">Home</a>
-    <a href="about">About Us</a>
-    <a href="blog">Blog</a>
-    <a href="contact">Contact</a>
-    <a href="signin">Sign In</a>
-  </nav>
-</div>
+  <div class="navbarfixed">
+
+    <div class="navbar">
+      <h1>SpaceWalkers</h1>
+      <nav>
+        <a href="home">Home</a>
+        <a href="about">About Us</a>
+        <a href="blog">Blog</a>
+        <a href="contact">Contact</a>
+        <a href="signin">Sign In</a>
+      </nav>
+    </div>
+  </div>
 <!-- navigation added -->
 
   <div class="container home">

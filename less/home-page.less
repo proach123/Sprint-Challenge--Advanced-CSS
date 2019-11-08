@@ -1,7 +1,11 @@
 // Home Content
 
 .home {
- 
+ margin-top: 16%;
+
+ @media @phone{
+   margin-top: 20%;
+ }
 
   .intro {
 
@@ -16,15 +20,20 @@
     img{
       border-radius: 5px;
       width: 100%;
+      .bootup();
+
+      
     }
-  
+    @media @phone{
+      .bootup();
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    .bootup();
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -33,6 +42,7 @@
 
       @media @phone{
         width: 100%;
+        .bootup();
       }
      
     }
@@ -72,12 +82,14 @@
       padding: 0%;
       margin: 2%;
       align-items: center;
+      .bootup();
     }
 
     .walk-text {
       width: 50%;
       @media @phone{
         width: 100%;
+        .bootup();
       }
 
       h3 {
@@ -94,8 +106,10 @@
         &:hover{
           .setHover(red,orange)
         }
+        .bootup();
         @media @phone{
           width: 100%;
+          .bootup();
         }
       }
     }
@@ -107,12 +121,14 @@
       @media @phone{
         width: 100%;
         margin: 2%;
+        .bootup();
       }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        .bootup();
       }
     }
   }
