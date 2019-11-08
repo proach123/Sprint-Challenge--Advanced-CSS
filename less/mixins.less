@@ -1,1 +1,20 @@
 // Mixins Here
+
+.display-flex-center(@direction){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap;
+}
+
+.signup-button(@color,@border-r,@text-color,@padding,@font-size ) {
+    background-color: @color;
+    border-radius: @border-r;
+    color: @text-color;
+    padding: @padding;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: @font-size;
+  }
