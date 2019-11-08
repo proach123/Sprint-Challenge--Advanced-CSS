@@ -4,7 +4,7 @@
 
 .navbar{
     .display-flex-center(column);
-    margin:1%;
+    .margin-set();
 
     h1{
         .display-flex-center(row);
@@ -14,8 +14,12 @@
     nav{
         .display-flex-center(row);
         justify-content: space-around;
-        margin: 1%;
+        .margin-set();
         width: 25%;
+        @media @phone{
+            width: 100%;
+          }
+
         a{
             text-decoration: none ;
             color:@shuttle-gray;
